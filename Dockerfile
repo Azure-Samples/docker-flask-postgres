@@ -1,7 +1,8 @@
 FROM tiangolo/uwsgi-nginx-flask:python3.6
 
 COPY requirements.txt /
-RUN pip install -r requirements.txt --no-cache-dir
+
+RUN pip install -r ./requirements.txt --no-cache-dir
 
 COPY app/ /app/
 
