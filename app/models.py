@@ -7,10 +7,7 @@ class Guest(DB.Model):
     id = DB.Column(DB.Integer, primary_key=True)
     name = DB.Column(DB.String(80))
     email = DB.Column(DB.String(120))
-    partysize = DB.Column(DB.Integer, default=1)
 
-    def __init__(self, name=None, email=None, partysize=1):
+    def __init__(self, name=None, email=None):
         self.name = name
         self.email = email
-        self.partysize = partysize
-    
