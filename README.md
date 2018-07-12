@@ -10,7 +10,7 @@ Download one of the releases then build and run in Docker locally via:
 
 ```
 docker build -t docker-flask-sample .
-docker run -it --env DBPASS="<PASSWORD>" --env DBHOST="<SERVER_HOST_NAME>" --env DBUSER="<USERNAME>" --env DBNAME="<DATABASE_NAME>" -p 5000:5000 docker-flask-sample`
+docker run -it --env DBPASS="<PASSWORD>" --env DBHOST="<SERVER_HOST_NAME>" --env DBUSER="<USERNAME>" --env DBNAME="<DATABASE_NAME>" -p 5000:5000 docker-flask-sample
 ```
 The app can be reached in your browser at `http://127.0.0.1:5000`.
 
